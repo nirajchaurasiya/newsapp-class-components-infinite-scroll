@@ -4,9 +4,7 @@ import News from './components/News'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import LoadingBar from 'react-top-loading-bar'
 export default class App extends Component {
-  // key = "3562eb843b144968b0a1e40917a4b58d" //nkc6
-  // key = "87e8aa831cd14e2482c643014edc41a6"//nkc29
-  key = "55a9bafa3e12451d9251ec76779c0f42"
+  key = process.env.key
   state = {
     progress: 0
   }
